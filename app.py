@@ -8,7 +8,12 @@ app = Flask(__name__, static_folder='static')
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # --- Hardcoded Auth ---
-from credentials import USERNAME, PASSWORD
+try:
+    from credentials import USERNAME, PASSWORD
+except ImportError:
+    USERNAME = input("Enter username: ")
+    PASSWORD = input("Enter password: ")
+
 VALID_AUTH = base64.b64encode(f"{USERNAME}:{PASSWORD}".encode()).decode()
 
 MEDIA_CONTROLS = {
