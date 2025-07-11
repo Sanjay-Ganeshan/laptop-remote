@@ -1,0 +1,2 @@
+USERNAME = "fillme"
+PASSWORD = "fillme"

@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f8f9fa;
+  font-size: 18px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+input.form-control {
+  background-color: #222;
+  color: #f8f9fa;
+  border: 1px solid #555;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+}
+
+.control-btn {
+  min-width: 80px;
+  min-height: 64px;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.bottom-zones {
+  width: 100%;
+  justify-content: center;
+}
+
+#joystick {
+  background-color: #333;
+  border-radius: 50%;
+  touch-action: none;
+}
+
+#scroll {
+  background-color: #333;
+  border-radius: 10px;
+  touch-action: none;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  input.form-control {
+    font-size: 1.1rem;
+  }
+
+  #joystick {
+    width: 220px;
+    height: 220px;
+    background-color: #222;
+    border-radius: 50%;
+    touch-action: none;
+    }
+
+    #scroll {
+    width: 60px;
+    height: 200px;
+    background-color: #222;
+    border-radius: 10px;
+    touch-action: none;
+    }
+
+    canvas {
+    display: block;
+    }
+
+}
