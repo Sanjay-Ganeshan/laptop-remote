@@ -199,4 +199,4 @@ def handle_scroll_end():
 # --- Entry ---
 if __name__ == '__main__':
     print("🚀 Media Remote running at http://localhost:9090")
-    socketio.run(app, host='0.0.0.0', port=9090, debug=True)
+    socketio.run(app, host='0.0.0.0', port=9090)
